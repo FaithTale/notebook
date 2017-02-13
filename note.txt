@@ -174,8 +174,10 @@ sudo systemctl start nfs-server.service
 
 windows工具：
 SetupFactory    制作安装程序
+------------------------------------------------------------------------------------------------
 
-
+其他：
+Reverse Tunneling    反隧道技术
 
 
 
