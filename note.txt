@@ -191,7 +191,7 @@ Reverse Tunneling    反隧道技术
 ------------------------------------------------------------------------------------------------
 Google:
 BigTable：GFS + Chubby    ---> windows Azure Storage和hadoop
-Spanner：跨多个数据中心的数据库事务
+Spanner：跨多个数据中心的数据库事务   Colossus第二代GFS
 Megastore：基于Bigtable
 MapReduce
 Percolator
