@@ -195,6 +195,7 @@ Spanner：跨多个数据中心的数据库事务   Colossus第二代GFS
 Megastore：基于Bigtable
 MapReduce
 Percolator
+TCmalloc
 
 facebook:
 Haystack
