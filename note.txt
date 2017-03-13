@@ -190,11 +190,21 @@ Reverse Tunneling    反隧道技术
 
 ------------------------------------------------------------------------------------------------
 Google:
-BigTable
-Spanner
-Megastore
+BigTable：GFS + Chubby    ---> windows Azure Storage和hadoop
+Spanner：跨多个数据中心的数据库事务
+Megastore：基于Bigtable
 MapReduce
 Percolator
+
+facebook:
+Haystack
+
+Amazon:
+Dynamo  --> 开源实现：Cassandra  (无中心节点的设计)
+
+TFS:
+Tair:分布式建值系统(有中心节点，主备)
+
 
 ------------------------------------------------------------------------------------------------
 集群选举算法
