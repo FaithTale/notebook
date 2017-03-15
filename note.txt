@@ -196,8 +196,27 @@ Megastore：基于Bigtable
 MapReduce
 Percolator
 TCmalloc
+Tenzing
+Pregel
+F1
+Dremel
 
-facebook:
+Microsoft:
+Dryad
+
+Yahoo:
+S4
+
+Twitter:
+Storm
+
+EMC:
+Greenplum    PostgreSQL
+
+HP:
+Vertica
+
+Facebook:
 Haystack
 
 Amazon:
