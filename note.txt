@@ -18,7 +18,7 @@ windows key：
 ------------------------------------------------------------------------------------------
 
 curlftps:
-curlftpfs  ftp://awen_huang1:000000a@ftp.uit.com.cn /mnt/uitftp/
+curlftpfs  ftp://user:password@ftp.uit.com.cn /mnt/uitftp/
 ------------------------------------------------------------------------------------------
 
 tar命令:
