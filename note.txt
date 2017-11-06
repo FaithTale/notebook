@@ -132,10 +132,6 @@ gdb调试：
 gdb --ex "handle SIGPIPE nostop noprint" --ex run --args 
 -------------------------------------------------------------------------------------------
 
-算法：
-https://github.com/julycoding/The-Art-Of-Programming-By-July
--------------------------------------------------------------------------------------------
-
 pprof分析：
 env HEAPCHECK=normal PPROF_PATH=/usr/local/sbin/pprof /usr/local/sbin/ufsclient -log_file_num=10 -log_cleaner_timeval=180 -max_log_size=10 -log_dir=/tmp -minloglevel=1 -master_server=172.16.65.250 -master_server_port=8888 -mount_point=/mnt/test -user=root -password=root -prefetch_chunks=8 -chunk_size=262144 -readahead_chunks=2 -buffered_chunks=32 -buffered_write_chunks=20 -master_missed_pings=10 -cs_missed_pings=10 -read_timeout=100 -min_net_clients=1 -num_event_threads=8 -timeout_secs=10 -back_jump_distance=8 -synccallback_timeout_ms=400 -write_budget_mbs=256 -fuse_options=nonempty
 
