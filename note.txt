@@ -234,6 +234,31 @@ ssdb
 ------------------------------------------------------------------------------------------------
 集群选举算法
 Paxos 2PC
+raft
 
 hanewin_nfs_server_V1.1.69  windows  nfs
+
+------------------------------------------------------------------------------------------------
+linux出现readonly：
+mount -o remount rw /
+
+
+------------------------------------------------------------------------------------------------
+流控：
+1.关于流控:可以使用ethtool -a   网口名查看是否开启：
+[root@node_188 ~]# ethtool -a eth2
+Pause parameters for eth2:
+Autonegotiate:       on
+RX:                  on      
+TX:                  on
+ethtool -s eth2 duplex full autoneg on  开启流控。
+ethtool -A eth2 rx on
+ethtool -A eth2 tx on
+2.关于RX、TX设置：
+编辑/etc/rc.sysinit文件，在最后加入如下命令：
+for d in `ls /sys/class/net/`                                  
+do                                                                         
+ ethtool -G $d rx 2048 tx 2048 >/dev/null 2>&1 || :    这两个数值可以根据实际情况修改：
+done                                                   如改为和交换机一致
+
 
