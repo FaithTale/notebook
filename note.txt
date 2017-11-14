@@ -159,6 +159,13 @@ gdb -c /tmp/core-ufs_meta-823-1451267661 /usr/local/sbin/ufs_meta
 
 命令重定向
 cmd >/dev/null 2>&1 || :
+
+shell注释一段代码
+:<<BLOCK
+xxx
+xxx
+xxx
+BLOCK
 ------------------------------------------------------------------------------------------------
 
 nfs，samba挂载：
