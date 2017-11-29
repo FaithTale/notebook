@@ -264,4 +264,21 @@ do                                                    
  ethtool -G $d rx 2048 tx 2048 >/dev/null 2>&1 || :    这两个数值可以根据实际情况修改：
 done                                                   如改为和交换机一致
 
+-----------------------------------------------------------------------------------------------
+linux kernel 配置网络参数
+net.ipv4.tcp_window_scaling = 1
+
+net.core.rmem_max=1677721600
+net.core.rmem_default=167772160
+net.core.wmem_max=1677721600
+net.core.wmem_default=167772160
+net.core.optmem_max= 2048000
+
+# set minimum size, initial size, and maximum size in bytes
+net.ipv4.tcp_rmem= 1024000 8738000 1677721600
+net.ipv4.tcp_wmem= 1024000 8738000 1677721600
+net.ipv4.tcp_mem= 1024000 8738000 1677721600
+net.ipv4.udp_mem= 1024000 8738000 1677721600
+net.core.netdev_max_backlog = 30000
+net.ipv4.tcp_no_metrics_save = 1
 
