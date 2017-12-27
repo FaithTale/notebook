@@ -282,3 +282,12 @@ net.ipv4.udp_mem= 1024000 8738000 1677721600
 net.core.netdev_max_backlog = 30000
 net.ipv4.tcp_no_metrics_save = 1
 
+-----------------------------------------------------------------------------------------------
+sshd文件属性修改
+cd /etc/ssh
+sudo chmod 644 ./*  
+sudo chmod 600 ssh_host_dsa_key  
+sudo chmod 600 ssh_host_rsa_key  
+sudo chmod 755 .  
+/etc/init.d/sshd restart 
+
