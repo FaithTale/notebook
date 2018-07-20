@@ -6,6 +6,7 @@ yum install tigervnc-server  //linux vnc工具
 yum install vnc
 
 yum install --downloaddir=/tmp/tmp_docker/ --downloadonly docker-engine
+yum install yum-plugin-downloadonly
 
 //建立一个虚拟机
  virsh  attach-interface --type bridge  --model virtio  --source br0 --persistent --domain win2k8
