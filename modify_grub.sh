@@ -14,3 +14,5 @@ set +e
 [ -n "$DEBUG" ] && set +x
 
 exit 0
+# grub2-mkconfig -o /boot/grub2/grub.cfg
+# 不建议修改 /boot/grub/grub.cfg ，而是去修改/etc/default/grub通过update-grub 来生成
