@@ -284,7 +284,6 @@ net.ipv4.tcp_mem= 1024000 8738000 1677721600
 net.ipv4.udp_mem= 1024000 8738000 1677721600
 net.core.netdev_max_backlog = 30000
 net.ipv4.tcp_no_metrics_save = 1
-
 -----------------------------------------------------------------------------------------------
 sshd文件属性修改
 cd /etc/ssh
@@ -294,3 +293,6 @@ sudo chmod 600 ssh_host_rsa_key
 sudo chmod 755 .  
 /etc/init.d/sshd restart 
 
+--------------------------------------------------------------------------------------------------
+pip添加ssl信任
+pip install pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --upgrade pip 
